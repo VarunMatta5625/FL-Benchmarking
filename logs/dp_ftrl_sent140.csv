@@ -1,0 +1,6 @@
+Round,Accuracy,Train_Loss,Epsilon,Noise_STD,Clipping_Threshold,Pre_Clip_Grad_Norm,Post_Clip_Grad_Norm,Clients_Sampled,Communication_MB
+1,0.3372,0.6935,0.5,0.5,1.0,N/A,N/A,5,0
+2,0.4481,0.6824,1.0,0.5,1.0,N/A,N/A,5,0
+3,0.4815,0.6882,1.5,0.5,1.0,N/A,N/A,5,0
+4,0.543,0.6849,2.0,0.5,1.0,N/A,N/A,5,0
+5,0.4451,0.7026,2.5,0.5,1.0,N/A,N/A,5,0
