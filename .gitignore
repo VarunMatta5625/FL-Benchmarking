@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Datasets (large; see data/README.md for how to obtain/build them)
+data/*
+!data/README.md
+
+# Editor
+.idea/
+.vscode/

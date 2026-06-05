@@ -145,7 +145,7 @@ for rnd in range(1, TOTAL_ROUNDS + 1):
 # ====================== Logging ======================
 
 os.makedirs("logs", exist_ok=True)
-with open("logs/pldpfl_metrics.csv", "w", newline="") as f:
+with open("logs/secureagg_metrics.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["Round", "Accuracy", "Epsilon"])
     writer.writerows(metrics)
@@ -154,12 +154,12 @@ rounds, accs, epsilons = zip(*metrics)
 plt.plot(rounds, accs)
 plt.xlabel("Rounds")
 plt.ylabel("Accuracy")
-plt.title("PLDP-FL: Accuracy vs Rounds")
-plt.savefig("logs/pldpfl_privacy_vs_rounds.png")
+plt.title("SecureAgg+DP: Accuracy vs Rounds")
+plt.savefig("logs/secureagg_privacy_vs_rounds.png")
 plt.clf()
 
 plt.plot(epsilons, accs)
 plt.xlabel("Privacy Loss (ε)")
 plt.ylabel("Accuracy")
-plt.title("PLDP-FL: Accuracy vs Privacy Loss")
-plt.savefig("logs/pldpfl_privacy_vs_accuracy.png")
+plt.title("SecureAgg+DP: Accuracy vs Privacy Loss")
+plt.savefig("logs/secureagg_privacy_vs_accuracy.png")
